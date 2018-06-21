@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Liquid Gallery</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        margin: 0;
+        font: normal 16px Helvetica, Arial, sans-serif;
+        background-color: #141414;
+        color: #f0f0f0;
+      }
+
+      main {
+        max-width: 1000px;
+        background-color: #333333;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+      }
+
+      figure {
+        margin: 0;
+        padding: 0 0 30px 0;
+      }
+
+      figure img {
+        border: 15px solid white;
+        box-sizing: border-box;
+      }
+
+      figcaption {
+        padding: 10px 0 0 0;
+      }
+
+      li {
+        box-sizing: border-box;
+        display: inline-block;
+        padding: 0 15px;
+        vertical-align: top;
+        width: 25%;
+        margin-bottom: 15px;
+      }
+
+      li img {
+        border: 3px solid white;
+        box-sizing: border-box;
+      }
+
+      ul {
+        padding: 0;
+        margin: 0 -15px;
+        font-size: 0;
+        box-sizing: border-box;
+      }
+
+      @media screen and (max-width: 900px) {
+        li {
+          width: 33.3333%;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        li {
+          width: 50%;
+        }
+      }
+
+      @media screen and (min-width: 1280px) {
+        main {
+          max-width: 100%;
+        }
+
+        figure {
+          display: inline-block;
+          float: left;
+          margin-right: 50px;
+          vertical-align: top;
+          width: 950px;
+        }
+
+        ul {
+          overflow: hidden;
+        }
+
+        li {
+          width: 100%;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      
+      <h1>My Photo Gallery</h1>
+
+      <figure>
+        <img src="/home/zizi/liquid-layout/img1.png" alt="picture">
+        <figcaption>Example photo</figcaption>
+      </figure>
+
+      <ul>
+        <li><img src="/home/zizi/liquid-layout/img1.png" alt="picture"></li>
+        <li><img src="/home/zizi/liquid-layout/img1.png" alt="picture"></li>
+        <li><img src="/home/zizi/liquid-layout/img1.png" alt="picture"></li>
+        <li><img src="/home/zizi/liquid-layout/img1.png" alt="picture"></li>
+        <li><img src="/home/zizi/liquid-layout/img1.png" alt="picture"></li>
+        <li><img src="/home/zizi/liquid-layout/img1.png" alt="picture"></li>
+        <li><img src="/home/zizi/liquid-layout/img1.png" alt="picture"></li>
+      </ul>
+
+    </main>
+  </body>
+</html>
